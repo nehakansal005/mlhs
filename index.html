@@ -24,13 +24,17 @@
 
     <!-- Theme CSS -->
     <link href="css/creative.min.css" rel="stylesheet">
-
+     <link href="jquery/jquery-ui.css" rel="stylesheet">
+  
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css">
+        .event-container{padding:5px;border-bottom:solid 1px #cccccc;height:auto;overflow:hidden;}.event-container .event-date{font:22px/22px Arial,Helvetica,sans-serif;color:#666;text-align:center;width:30px;float:left;margin-right:5px;padding-top:10px;display:inline;}.event-container .event-date span{display:block;font-size:10px;}.event-container .event-thumb{float:left;margin-right:5px;display:inline;}.event-container .event-title{float:left;display:inline;width:208px;}.event-container .event-title a{color:#538230;font:14px/20px Arial,Helvetica,sans-serif;}.event-container .event-title a:hover{text-decoration:none;color:#000;
+    </style>
 
 </head>
 
@@ -50,11 +54,8 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                   <li class="dropdown">
-                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">About MLHS<b class="caret"></b></a>
-                           <ul class="dropdown-menu">
-                                <li><a href="#about" class="page-scroll" >Our History</a></li>
-                                <li><a href="#about" class="page-scroll" >Our Vision</a></li>
-                            </ul>
+                       <a href="#about" class="page-scroll" >About MLHS</a>
+                    
                   </li>
                   <li class="dropdown">
                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Past Achievements<b class="caret"></b></a>
@@ -73,7 +74,7 @@
                     </li>
 
                     <li>
-                        <a class="page-scroll" href="#about">Events And News</a>
+                        <a class="page-scroll" href="#about">Events &amp; News</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact Us</a>
@@ -141,34 +142,92 @@
                 <h1 id="homeHeading">Your Favorite Source of Free Bootstrap Themes</h1>
                 <hr>
                 <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+                <a href="#about" class="btn btn-success btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
     </header>
 
-    <section  id="about" class="">
+    <div  id="about" class="bg-success" style="padding-top: 20px; padding-bottom: 20px; min-height: 400px; ">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 text-center">
-                    <h2 class="section-heading">We've got what you need!</h2>
-                    <hr class="light">
-                    <p class="">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
+                <div class="col-lg-8 col-sm-12 text-justify" id="tabs">
+                    
+                            <ul>
+                                <li><a href="#tabs-1" class="text-uppercase"><h4 class="section-heading">Our History</h4></a></li>
+                                <li><a href="#tabs-2" class="text-uppercase"><h4 class="section-heading">Our vision</h4></a></li>
+                  
+                            </ul>
+                            <div id="tabs-1" style="min-height: 360px;" >
+                            <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                             </div>
+                            <div id="tabs-2" style="min-height: 360px;">
+                              <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                            </div>
+                    
+ 
                 </div>
-                <div class="col-lg-4 ">
-                    <h2 class="section-heading">News and Events</h2>
-                    <hr class="light">
-                </div>
+                <div class="col-lg-4 col-sm-12 ">
+                         <h2 class="section-heading text-uppercase text-center">News &amp; Events</h2>
+                         <hr class="light">
+                         <div class="event-container">
+                              <div class="event-date">
+                                 9 <span>
+                                 Jun </span></div>
+                              <div class="event-thumb"><a href="http://www.dpschd.com/2017/06/dps-student-bags-second-position-tricity-clat/"></a></div>
+                              <div class="event-title"> <a href="http://www.dpschd.com/2017/06/dps-student-bags-second-position-tricity-clat/" rel="bookmark" title="DPS Student bags Second Position from tricity in CLAT">
+                                     DPS Student bags Second Position from tricity in CLAT </a> </div>
+                         </div>
+                         <div class="event-container">
+                              <div class="event-date">
+                               9 <span>
+                               Jun </span></div>
+                              <div class="event-thumb"><a href="#"></a></div> <!-- it is empty para -->
+                              <div class="event-title"> <a href="#" rel="bookmark" title="Summer Camp at DPS">
+                              Summer Camp at DPS </a> </div>
+                          </div>
+
+                         <div class="event-container">
+                              <div class="event-date">
+                               9 <span>
+                               Jun </span></div>
+                              <div class="event-thumb"><a href="#"></a></div> <!-- it is empty para -->
+                              <div class="event-title"> <a href="#" rel="bookmark" title="Summer Camp at DPS">
+                              Summer Camp at DPS </a> </div>
+                          </div>
+                          
+                         <div class="event-container">
+                              <div class="event-date">
+                               9 <span>
+                               Jun </span></div>
+                              <div class="event-thumb"><a href="#"></a></div> <!-- it is empty para -->
+                              <div class="event-title"> <a href="#" rel="bookmark" title="Summer Camp at DPS">
+                              Summer Camp at DPS </a> </div>
+                          </div>
+                          
+                         <div class="event-container">
+                              <div class="event-date">
+                               9 <span>
+                               Jun </span></div>
+                              <div class="event-thumb"><a href="#"></a></div> <!-- it is empty para -->
+                              <div class="event-title"> <a href="#" rel="bookmark" title="Summer Camp at DPS">
+                              Summer Camp at DPS </a> </div>
+                          </div>
+
+
+
+             </div>
             </div>
         </div>
-    </section>
+    
+        
+    </div>
 
     <section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">At Your Service</h2>
-                    <hr class="primary">
+                    <hr class="bl">
                 </div>
             </div>
         </div>
@@ -176,28 +235,28 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                        <i class="fa fa-4x fa-diamond text-success sr-icons"></i>
                         <h3>Sturdy Templates</h3>
                         <p class="text-muted">Our templates are updated regularly so they don't break.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                        <i class="fa fa-4x fa-paper-plane text-success sr-icons"></i>
                         <h3>Ready to Ship</h3>
                         <p class="text-muted">You can use this theme as is, or you can make changes!</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                        <i class="fa fa-4x fa-newspaper-o text-success sr-icons"></i>
                         <h3>Up to Date</h3>
                         <p class="text-muted">We update dependencies to keep things fresh.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <i class="fa fa-4x fa-heart text-success sr-icons"></i>
                         <h3>Made with Love</h3>
                         <p class="text-muted">You have to make your websites with love these days!</p>
                     </div>
@@ -402,6 +461,14 @@
             </div>
        </div>
 
+<script src="jquery/external/jquery/jquery.js"></script>
+<script src="jquery/jquery-ui.js"></script>
+   <script type="text/javascript">
+   
+    $( "#tabs" ).tabs();
+
+  
+   </script>
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -415,6 +482,7 @@
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
+ 
 
 </body>
 

@@ -16,6 +16,9 @@ hr {
   border-width: 3px;
   max-width: 50px;
 }
+hr.bl{
+  border-color: aqua;
+}
 hr.light {
   border-color: white;
 }
